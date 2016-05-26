@@ -1,0 +1,204 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Making Decisions - Introduction"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Your programs so far always carry out the same commands every time the programs are run. Most programs need to be able to carry out different commands – for example in most programs you can choose commands from menus.  \n",
+    "\n",
+    "This is done with the Python **if** command. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## The Basic if - a Single Result\n",
+    "If the condition temperature<15 is **True**, Python will carry out the two indented print commands.\n",
+    "\n",
+    "- The sign < means 'less than' or 'fewer than'\n",
+    "- Python needs you to 'indent' everything belonging to the if.\n",
+    "- The best way to indent is to press the TAB key just to the left of the letter Q\n",
+    "- the 'condition' part of an if will work out as either True or False\n",
+    "\n",
+    "*Please now run the following program a couple of times, first with a low temperature below 15 and then with a temperature above 15.*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please enter the temperature: 3\n",
+      "It is too cold.\n",
+      "Turn up the heating.\n"
+     ]
+    }
+   ],
+   "source": [
+    "temperature = float(input(\"Please enter the temperature: \"))\n",
+    "if temperature<15:\n",
+    "    print(\"It is too cold.\")\n",
+    "    print(\"Turn up the heating.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "*If you've done it right, you should see a message to turn up heating the first time, but no message the second time*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## if..else - One of Two Results\n",
+    "Using **else**, if the condition is true, Python will carry out the first block of indented commands. If the condition is false, Python will carry out the second block of indented commands. **Only one block will ever be executed**  \n",
+    "\n",
+    "*Please now run the following program a couple of times, just like before. This time you should see a new message with a temperature above 15*."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "temperature = float(input(\"Please enter the temperature: \"))\n",
+    "if temperature<15:\n",
+    "    print(\"It is too cold.\")\n",
+    "    print(\"Turn up the heating.\")\n",
+    "else:\n",
+    "    print(\"You can turn the heating off now\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "*If you've done it right, you should see an appropriate message for your selected temperatures*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## if..elif..else - One of Three Results\n",
+    "When the first if condition is true, Python will carry out the first block of indented commands. If the condition is false, Python will have a look at the second condition. If that condition is true, Python will carry out the second block of indented commands. If neither of these conditions are true, the last block of commands will be executed. **Only one of the three blocks will ever be executed**  \n",
+    "\n",
+    "*Please now run the following program a three times, just like before. This time you should see another new message with a temperature above 25*."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "temperature = float(input(\"Please enter the temperature: \"))\n",
+    "if temperature<15:\n",
+    "    print(\"It is too cold.\")\n",
+    "    print(\"Turn up the heating.\")\n",
+    "elif temperature<25:\n",
+    "    print(\"Please turn the heating off\")\n",
+    "    print(\"Please turn the air-con off\")\n",
+    "else:\n",
+    "    print(\"It is too hot.\")\n",
+    "    print(\"Please turn on the air-con\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "*If you've done it right you should see the following outputs, one at a time:*\n",
+    "\n",
+    "Please enter the temperature: 12\n",
+    "It is too cold.\n",
+    "Turn up the heating.\n",
+    "\n",
+    "Please enter the temperature: 20\n",
+    "Please turn the heating off\n",
+    "Please turn the air-con off\n",
+    "\n",
+    "Please enter the temperature: 30\n",
+    "It is too hot.\n",
+    "Please turn on the air-con"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## if..elif..elif..else - One of Four (or More!) Results\n",
+    "When the first if condition is true, Python will carry out the first block of indented commands. If the condition is false, Python will have a look at the second condition. If that condition is true, Python will carry out the second block of indented commands.  \n",
+    "If the second condition is also false, Python will look at the third condition. If the third condition is true, the third block will be executed.  \n",
+    "If none of these conditions are true, the very last block of commands will be executed. **Only one of the many blocks will ever be executed**  \n",
+    "\n",
+    "*Please now run the following program a four times, just like before. This time you should see another new message with a temperature above 35*."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "temperature = float(input(\"Please enter the temperature: \"))\n",
+    "if temperature<15:\n",
+    "    print(\"It is too cold.\")\n",
+    "    print(\"Turn up the heating.\")\n",
+    "elif temperature<25:\n",
+    "    print(\"Please turn the heating off\")\n",
+    "    print(\"Please turn the air-con off\")\n",
+    "elif temperature<35:\n",
+    "    print(\"It is too hot.\")\n",
+    "    print(\"Please turn on the air-con\")\n",
+    "else:\n",
+    "    print(\"HMGW: Holey Moley Global Warming\")\n",
+    "    print(\"Break out the barbecue!\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

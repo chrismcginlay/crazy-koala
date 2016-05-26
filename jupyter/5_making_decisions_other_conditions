@@ -1,0 +1,200 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Making Decisions - Other Conditions"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Simple Conditions\n",
+    "Python code|Explanation|Example\n",
+    "-|-|-\n",
+    "==|is the same as, or is equal to|if name==\"Fred\":\n",
+    "!=|is not same as, or is not equal to|if number!=4:\n",
+    "<|is less than (aka fewer than)|if age<18:\n",
+    ">|is greater than, (aka more than)|if age>18:\n",
+    "<=|is less than or equal to|if age<=18:\n",
+    ">=|is more than or equal to|if age>=18:\n",
+    "in|is in a list|if 3 in [1,2,3,4]:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Some Points to Notice\n",
+    "- Python uses two equals signs to check if things have the same value as in  **if name==\"Fred\":**\n",
+    "- Python uses one equals sign to assign a value to a variable as in  **name=\"Daphne\"**\n",
+    "- You can test strings in conditions too - just remember to use quote marks around text strings.\n",
+    "\n",
+    "*Run the following code and enter the password*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "password = input(\"Please enter the password: \")\n",
+    "if password==\"Beeblebrox\":\n",
+    "    print(\"Welcome Zaphod. How improbable of you.\")\n",
+    "else:\n",
+    "    print(\"Get lost!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "*Study the code you just ran. Hopefully you can see why getting the password right or wrong affects which print function is executed*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Try This Yourself - Speed\n",
+    "No road in Shetland, UK has a speed limit above 60mph.  \n",
+    "*Let's write a program that could be part of a speed warning system in a car.*  \n",
+    "The program is partially complete - you just need to put the correct condition after the if statement.  \n",
+    "**Don't forget to add a colon : after the if condition**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "speed = int(input(\"Please enter speed in mph: \"))\n",
+    "if :\n",
+    "    print(\"You are exceeding the speed limit. Please slow down.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "*Test your program three times with speeds of 30, 60 and 65.*  \n",
+    "If you've done it right, only the 65 miles per hour speed should result in the message being printed."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Try This Too - Police Car\n",
+    "Police and emergency vehicles are allowed to exceed the speed limit under certain circumstances.  \n",
+    "*Let's write a program which knows about emergency vehicles*  \n",
+    "The program is partially complete - you just need to print the message \"You can exceed 60mph in an emergency if safe to do so\" in the correct place.  "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "answer = input(\"Are you driving an emergency vehicle Y/N: \")\n",
+    "if answer=='Y':\n",
+    "    is_emergency_vehicle = True\n",
+    "else:\n",
+    "    is_emergency_vehicle = False\n",
+    "    \n",
+    "if is_emergency_vehicle==True:\n",
+    "    print(\"Change these words\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "*Test your program twice, answering first N then Y.*  \n",
+    "If you've done it right, answering Y to the question will print the message 'You can exceed 60mph...'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Complex Conditions\n",
+    "In real programs you often need to test several things at the same time, for example; is a person under 18 and living in Scotland?  \n",
+    "Python can do this with complex conditions:\n",
+    "\n",
+    "Python Code|Explanation|Example\n",
+    "-|-|-\n",
+    "and|both conditions must be True|if age>=13 and age<18:\n",
+    "or|either condition must be True|if age<13 or age>65:\n",
+    "not|condition must not be True (i.e. must be False)|if not(age==18):"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Try This - Police Car Improved\n",
+    "When answering 'yes' to a question, a user might type:\n",
+    "- Y (capital)\n",
+    "- y (lower case)\n",
+    "- yes\n",
+    "- aye  \n",
+    "\n",
+    "*Let's improve the emergency vehicle program to handle responses like Y,y,yes,Yes*  \n",
+    "The program is partially complete - you just need to extend the if statement with  \n",
+    "**or anwer=='yes'**  \n",
+    "and so on."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "answer = input(\"Are you driving an emergency vehicle Y/N: \")\n",
+    "if answer=='Y' or answer==:\n",
+    "    is_emergency_vehicle = True\n",
+    "else:\n",
+    "    is_emergency_vehicle = False\n",
+    "    \n",
+    "if is_emergency_vehicle==True:\n",
+    "    print(\"You can exceed 60mph in an emergency if safe to do so\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

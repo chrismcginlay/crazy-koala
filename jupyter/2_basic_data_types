@@ -1,0 +1,124 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Basic Data Types"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Data Types\n",
+    "Python supports several different types of data values. These values can be stored and re-used in **variables**.\n",
+    "\n",
+    "Type | Python | Purpose | Examples\n",
+    "-|-|-|-\n",
+    "Integer | int | store whole numbers | no_of_pupils <br> hours <br> height_centimetres <br> fluffy_bunny_count <br>cost_in_pence\n",
+    "Real | float | store decimal numbers | pi<br>cost_in_pounds<br>height_metres\n",
+    "Text | str | store strings of characters, aka text | name <br>car_registration <br>telephone_number\n",
+    "\n",
+    "## Idea of a Variable\n",
+    "The computer needs away of storing information (integers, reals, strings) so that a program can process this information. Often the data are held long-term on **databases**, but for a programs need to use **variables** to keep the information available whilst the program is running or **executing**.\n",
+    "\n",
+    "* You should think of variables as named shoe-boxes.\n",
+    "* Storing a value in a variable is called assigning a value\n",
+    "* Reading a value from a variable is called retrieval.\n",
+    "* Changing the value of a variable is called re-assigning.\n",
+    "\n",
+    "```python\n",
+    "x = 42\n",
+    "y = 42\n",
+    "```\n",
+    "![python-course.eu](http://www.python-course.eu/images/shoebox_variables_3.png)\n",
+    "The boxes (variables) are named 'x' and 'y'. Both variables contain the value '42' "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Assigning Some Data\n",
+    "\n",
+    "You are now going to store some values into some variables and we'll make sure you get the correct data types.\n",
+    "* In the variable **name** you should store a string value.\n",
+    "* In the variable **number_of_pens** you should store an integer.\n",
+    "* In the variable **length_in_metres** you should store a real (decimal)\n",
+    "\n",
+    "*In the following code, store the correct type of information and you will get everything marked correct.*\n",
+    "Don't worry about the **if** or **type** parts of the program just now."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-19-1635055e65cc>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-19-1635055e65cc>\"\u001b[1;36m, line \u001b[1;32m1\u001b[0m\n\u001b[1;33m    name =\u001b[0m\n\u001b[1;37m           ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = \n",
+    "number_of_pens = \n",
+    "length_in_metres = \n",
+    "if type(name)==type(''): print('You got the correct string type')\n",
+    "if type(number_of_pens)==type(1): print('You got the correct int type')\n",
+    "if type(length_in_metres)==type(1.0): print('You got the correct float type')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "If you've done it right, your output should look like this:\n",
+    "\n",
+    "You got the correct string type  \n",
+    "You got the correct int type  \n",
+    "You got the correct float type"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Optional: More Information\n",
+    "Python has several super-cool data types and data structures like lists, dictionaries, tuples and sets.\n",
+    "You can get more information on Python 3 data-types from these links:  \n",
+    "http://www.python-course.eu/python3_variables.php (easy)  \n",
+    "https://en.wikibooks.org/wiki/Python_Programming/Data_Types (medium)   \n",
+    "https://docs.python.org/3/library/datatypes.html (gratuitous)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
