@@ -11,9 +11,15 @@ grid = [
     list("LKJHCVNBVYR"),
     list("CCCBIWUISKT"),
     list("LKTSOPSHDER"),
-    list("XZKGEDSEIGU"),
+    list("XZPOSTSEIGU"),
 ]
 
+for row in grid:
+    row.insert(0,"*")
+    row.append("*")
+width = len(grid[0])+2
+grid.insert(0,list("*"*width))
+grid.append(list("*"*width))
 target = "POST"
 letter1 = target[0]
 letter2 = target[1]
