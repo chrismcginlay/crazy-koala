@@ -10,7 +10,7 @@
 
 1. Hit CTRL-Enter to run interactive cells. If an input() is required, you just type you entry and press plain old Enter. Individual cell outputs can be cleared via the Cell menu.
 
-1. A pupil may report that a bit of interactive Python won't run. Each notebook can only have one running cell. Check above and below to ensure the pupil has finished interacting with other cells.
+1. A pupil may report that a bit of interactive Python won't run. Each notebook can only have one running cell. Check above and below to ensure the pupil has finished interacting with other cells. If this doesn't work, restart the kernel via Kernel-Restart.
 
 1. A pupil may inadvertently type into an interactive cell and trash it. CTRL-z works to undo. Or just reload the entire page (which will work because you set it to read only, right? :) ). Each page is quite small in terms of time effort and repeating a little won't do any harm at all.
 
